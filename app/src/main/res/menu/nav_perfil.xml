@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@android:drawable/ic_input_get"
+        android:title="VER PERFIL" />
+
+    <item
+        android:id="@+id/recyclerChampionsFragment"
+        android:icon="@drawable/conf"
+        android:title="CONFIGURACIÓN" />
+
+    <item
+        android:id="@+id/recyclerAlfaFragment"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="AYUDA" />
+
+
+
+</menu>

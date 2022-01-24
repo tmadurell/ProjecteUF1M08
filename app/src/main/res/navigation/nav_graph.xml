@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/benvinguts">
+
+    <fragment
+        android:id="@+id/benvinguts"
+        android:name="com.amadurell.projecteuf1m08.Benvinguts"
+        android:label="benvinguts"
+        tools:layout="@layout/benvinguts">
+    <action
+        android:id="@+id/action_benvingut_to_matrix"
+        app:destination="@id/usuaris" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/usuaris"
+        android:name="com.amadurell.projecteuf1m08.Usuaris"
+        android:label="usuaris"
+        tools:layout="@layout/usuaris">
+        <action
+            android:id="@+id/action_matrix_to_usuariExistent"
+            app:destination="@id/usuariExistent" />
+        <action
+            android:id="@+id/action_matrix_to_usuariNou"
+            app:destination="@id/usuariNou" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.amadurell.projecteuf1m08.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/usuariExistent"
+        android:name="com.amadurell.projecteuf1m08.UsuariExistent"
+        android:label="fragment_usuari_existent"
+        tools:layout="@layout/fragment_usuari_existent" >
+        <action
+            android:id="@+id/action_usuariExistent_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_usuariExistent_to_matrix"
+            app:destination="@id/usuaris" />
+    </fragment>
+    <fragment
+        android:id="@+id/usuariNou"
+        android:name="com.amadurell.projecteuf1m08.UsuariNou"
+        android:label="fragment_usuari_nou"
+        tools:layout="@layout/fragment_usuari_nou" >
+        <action
+            android:id="@+id/action_usuariNou_to_felicitats"
+            app:destination="@id/felicitats" />
+        <action
+            android:id="@+id/action_usuariNou_to_matrix"
+            app:destination="@id/usuaris" />
+    </fragment>
+    <fragment
+        android:id="@+id/felicitats"
+        android:name="com.amadurell.projecteuf1m08.Felicitats"
+        android:label="fragment_felicitats"
+        tools:layout="@layout/fragment_felicitats" >
+        <action
+            android:id="@+id/action_felicitats_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recyclerContenidoFragment"
+        android:name="com.amadurell.projecteuf1m08.RecyclerContenidoFragment"
+        tools:layout="@layout/fragment_recycler_contenido" />
+
+
+
+    <action
+        android:id="@+id/action_mostrarContenidoFragment"
+        app:destination="@id/mostrarContingutFragment" />
+
+    <action
+        android:id="@+id/action_nouContenidoFragment"
+        app:destination="@id/nouContingutFragment" />
+
+    <fragment
+        android:id="@+id/nouContingutFragment"
+        android:name="com.amadurell.projecteuf1m08.NouContingutFragment"
+        android:label="Creacion"
+        tools:layout="@layout/fragment_nou_contingut" />
+    <fragment
+        android:id="@+id/mostrarContingutFragment"
+        android:name="com.amadurell.projecteuf1m08.MostrarContingutFragment"
+        tools:layout="@layout/fragment_mostrar_contingut" />
+    <fragment
+        android:id="@+id/recyclerBusquedaFragment"
+        android:name="com.amadurell.projecteuf1m08.RecyclerBusquedaFragment"
+        android:label="Cerca"
+        tools:layout="@layout/fragment_recycler_busqueda" />
+    <fragment
+        android:id="@+id/recyclerValoracioFragment"
+        android:name="com.amadurell.projecteuf1m08.RecyclerValoracioFragment"
+        android:label="TOP"
+        tools:layout="@layout/fragment_recycler_valoracio" />
+    <fragment
+        android:id="@+id/recyclerCalculoFragment"
+        android:name="com.amadurell.projecteuf1m08.CalculoFragment"
+        android:label="fragment_recycler_calculo"
+        tools:layout="@layout/fragment_recycler_calculo" />
+
+
+</navigation>

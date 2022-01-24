@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6B8AB0"
+    tools:context=".Felicitats">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="260dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="3dp"
+        android:text="¡Felicidades!"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="326dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="64dp"
+        android:text="Ya te has registrado"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/A"
+        app:layout_constraintEnd_toEndOf="@+id/contrasenya"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="@+id/contrasenya" />
+
+    <Button
+        android:id="@+id/irAPP"
+
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="576dp"
+        android:layout_marginBottom="217dp"
+        android:background="@drawable/vrodo"
+        android:text="Ir a la APP"
+
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contrasenya"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="No olvides visitar tu perfil para modificar y terminar de añadir los ultimos datos personales. Y también validar tu cuenta en tu correo electrónico"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/irAPP"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bien"
+        android:layout_width="116dp"
+        android:layout_height="131dp"
+        android:layout_marginEnd="232dp"
+        android:rotationY="-180"
+        android:src="@drawable/bien"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bien2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <ImageView
+        android:id="@+id/A"
+        android:layout_width="139dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/aplausos"
+        app:layout_constraintBottom_toTopOf="@+id/contrasenya"
+        app:layout_constraintEnd_toStartOf="@+id/bien2"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toEndOf="@+id/bien" />
+
+    <ImageView
+        android:id="@+id/bien2"
+        android:layout_width="116dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/bien"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/A"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.031" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
